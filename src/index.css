@@ -5,9 +5,108 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  display:flex;
+  justify-content: center;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.container {
+  font-family: Arial, sans-serif;
+  background-color: #fff; /* белый */
+  color: #000; /* черный */
+  padding: 20px;
+  max-width: 600px;
+  min-width:600px;
+  margin: 0 auto;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+h2 {
+  text-align: center;
+  color: #000000; /* оранжевый */
+}
+
+input {
+  display: block;
+  width: calc(100% - 20px);
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+select{
+  background-color: #ff6600; /* оранжевый */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+input:focus {
+  outline: none;
+  border-color: #ff6600;
+}
+
+button {
+  background-color: #ff6600; /* оранжевый */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+button:hover {
+  background-color: #e65c00; /* темно-оранжевый при наведении */
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+button.edit-btn {
+  background-color: #000; /* черный для редактирования */
+}
+
+button.edit-btn:hover {
+  background-color: #333; /* чуть светлее при наведении */
+}
+
+button.delete-btn {
+  background-color: #e60000; /* красный для удаления */
+}
+
+button.delete-btn:hover {
+  background-color: #cc0000; /* темно-красный при наведении */
+}
+
+div{
+  display:flex;
+  flex-direction: column;
+  width:600px;
 }
